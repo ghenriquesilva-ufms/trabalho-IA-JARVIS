@@ -1,0 +1,118 @@
+Origem dos dados: literatura de Machine Learning e estatística, incluindo Tom Mitchell, Aurélien Géron e Christopher Bishop
+Tipo de conteúdo: conceitos de modelos preditivos supervisionados 
+Limitações: não aprofunda implementação matemática nem otimização avançada
+
+Classificação vs Regressão
+
+Classificação e regressão são dois dos principais tipos de problemas em Aprendizado de Máquina (Machine Learning). Ambos utilizam dados para realizar previsões, porém diferem no tipo de saída produzida pelo modelo.
+
+Regressão
+
+A regressão é utilizada quando o objetivo é prever valores numéricos contínuos. O modelo tenta identificar padrões matemáticos entre variáveis para estimar quantidades.
+
+Exemplos de problemas de regressão:
+
+Previsão de preço de imóveis;
+Estimativa de temperatura;
+Previsão de faturamento;
+Estimativa de consumo de energia;
+Previsão de tempo de entrega.
+
+Na regressão, o resultado normalmente é um número real. Por exemplo:
+
+Preço de uma casa: R$ 350.000;
+Temperatura prevista: 27,5°C;
+Salário estimado: R$ 4.200.
+
+Um dos algoritmos mais conhecidos é a Regressão Linear, que busca modelar uma relação linear entre variáveis. Sua fórmula básica é:
+
+y = ax + b
+
+Onde:
+
+y representa o valor previsto;
+x representa a variável de entrada;
+a é o coeficiente angular;
+b é o coeficiente linear.
+
+Os modelos de regressão geralmente são avaliados utilizando métricas como:
+
+MSE (Mean Squared Error);
+RMSE (Root Mean Squared Error);
+MAE (Mean Absolute Error);
+R² (Coeficiente de Determinação).
+
+Classificação
+
+A classificação é utilizada quando o objetivo é prever categorias ou classes. O modelo analisa padrões nos dados para decidir a qual grupo determinado exemplo pertence.
+
+Exemplos de problemas de classificação:
+
+Detectar spam em e-mails;
+Reconhecimento facial;
+Diagnóstico médico;
+Identificação de fraudes;
+Classificação de sentimentos.
+
+Na classificação, o resultado é uma categoria. Por exemplo:
+
+Spam ou Não Spam;
+Positivo ou Negativo;
+Aprovado ou Reprovado;
+Gato, Cachorro ou Pássaro.
+
+A classificação pode ser:
+
+Binária: quando existem apenas duas classes;
+Multiclasse: quando existem várias categorias;
+Multirrótulo: quando um exemplo pode pertencer a múltiplas classes ao mesmo tempo.
+
+Um dos algoritmos mais utilizados é a Regressão Logística, que apesar do nome é um algoritmo de classificação. Outros algoritmos populares incluem:
+
+K-Nearest Neighbors (KNN);
+Árvores de Decisão;
+Random Forest;
+Support Vector Machine (SVM);
+Redes Neurais.
+
+Os modelos de classificação geralmente são avaliados utilizando:
+
+Acurácia;
+Precisão;
+Recall;
+F1-Score;
+Matriz de Confusão.
+
+Diferenças entre Classificação e Regressão
+
+A principal diferença está no tipo de saída:
+
+Regressão prevê valores numéricos contínuos;
+Classificação prevê categorias.
+
+Exemplos comparativos:
+
+Regressão: prever o preço de um carro;
+Classificação: prever se o carro será vendido ou não.
+Regressão: estimar a quantidade de chuva;
+Classificação: prever se vai chover.
+Regressão: prever nota de um estudante;
+Classificação: prever aprovação ou reprovação.
+
+Aplicações
+
+Aplicações de regressão:
+
+Economia;
+Engenharia;
+Meteorologia;
+Mercado financeiro;
+Estatística.
+
+Aplicações de classificação:
+
+Segurança digital;
+Inteligência Artificial;
+Sistemas de recomendação;
+Visão computacional;
+Processamento de linguagem natural.

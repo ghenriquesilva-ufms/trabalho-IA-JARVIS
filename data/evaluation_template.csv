@@ -1,0 +1,11 @@
+id,pergunta,docs_recuperados,resposta,classificacao,observacoes
+1,Explique regressao logistica.,,,,
+2,Resuma o conteudo sobre embeddings.,,,,
+3,Quais sao os principais pontos do material X?,,,,
+4,Qual a diferenca entre classificacao e regressao?,,,,
+5,O que e overfitting e como evitar?,,,,
+6,Descreva validacao cruzada.,,,,
+7,O que e regularizacao L2?,,,,
+8,Para que serve a funcao sigmoide?,,,,
+9,Explique matriz de confusao.,,,,
+10,O que e recall e precision?,,,,

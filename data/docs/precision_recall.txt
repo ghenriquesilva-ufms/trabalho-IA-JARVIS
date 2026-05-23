@@ -1,0 +1,230 @@
+Origem dos dados: Information Retrieval, estatística e avaliação de modelos, incluindo pesquisas de recuperação de informação
+Tipo de conteúdo: métricas de classificação e análise de desempenho
+Limitações: não detalha análise estatística avançada nem curvas complexas de avaliação
+
+Precision e Recall são métricas fundamentais utilizadas para avaliar modelos de classificação em Aprendizado de Máquina. Elas são especialmente importantes em problemas onde apenas medir acurácia não é suficiente, principalmente em datasets desbalanceados.
+
+Essas métricas são calculadas a partir da matriz de confusão e ajudam a entender diferentes tipos de erro do modelo.
+
+Conceito Fundamental
+
+Em classificação binária, os resultados podem ser divididos em:
+
+Verdadeiros Positivos (TP);
+Verdadeiros Negativos (TN);
+Falsos Positivos (FP);
+Falsos Negativos (FN).
+
+Precision e Recall utilizam esses valores para medir:
+
+qualidade das previsões positivas;
+capacidade de encontrar casos positivos reais.
+
+Precision
+
+Precision, também chamada de Precisão, mede quantas previsões positivas feitas pelo modelo realmente estavam corretas.
+
+Fórmula:
+
+Precision = TP / (TP + FP)
+
+Onde:
+
+TP = Verdadeiros Positivos;
+FP = Falsos Positivos.
+
+Interpretação
+
+Alta precision significa:
+
+poucos falsos positivos;
+previsões positivas mais confiáveis.
+
+Exemplo:
+Se um sistema detecta spam:
+
+alta precision significa que poucos e-mails normais foram classificados como spam.
+
+Exemplo Numérico
+
+Suponha:
+
+TP = 90;
+FP = 10.
+
+Então:
+
+Precision = 90 / (90 + 10)
+Precision = 0,90
+
+Resultado:
+
+90% das previsões positivas estavam corretas.
+
+Recall
+
+Recall, também chamado de Sensibilidade ou Taxa de Verdadeiros Positivos, mede quantos casos positivos reais o modelo conseguiu identificar.
+
+Fórmula:
+
+Recall = TP / (TP + FN)
+
+Onde:
+
+TP = Verdadeiros Positivos;
+FN = Falsos Negativos.
+
+Interpretação
+
+Alto recall significa:
+
+poucos falsos negativos;
+maior capacidade de encontrar casos positivos reais.
+
+Exemplo:
+Em diagnóstico médico:
+
+alto recall significa detectar a maior quantidade possível de pacientes doentes.
+
+Exemplo Numérico
+
+Suponha:
+
+TP = 90;
+FN = 30.
+
+Então:
+
+Recall = 90 / (90 + 30)
+Recall = 0,75
+
+Resultado:
+
+o modelo encontrou 75% dos casos positivos reais.
+
+Diferença entre Precision e Recall
+
+Precision:
+
+mede qualidade das previsões positivas.
+
+Recall:
+
+mede capacidade de encontrar positivos reais.
+
+Resumo intuitivo:
+
+Precision responde:
+“Quando o modelo diz que é positivo, ele costuma acertar?”
+Recall responde:
+“Quantos positivos reais o modelo conseguiu encontrar?”
+
+Trade-off entre Precision e Recall
+
+Em muitos problemas existe um equilíbrio entre precision e recall.
+
+Aumentar precision:
+
+normalmente reduz recall.
+
+Aumentar recall:
+
+normalmente reduz precision.
+
+Isso ocorre porque o modelo ajusta o limiar de decisão.
+
+Exemplo:
+Um sistema muito rigoroso:
+
+reduz falsos positivos;
+aumenta precision;
+pode perder positivos reais;
+reduz recall.
+
+Já um sistema mais permissivo:
+
+encontra mais positivos;
+aumenta recall;
+mas pode gerar mais falsos positivos;
+reduz precision.
+
+F1-Score
+
+O F1-Score combina precision e recall em uma única métrica.
+
+Fórmula:
+
+F1 = 2 * (Precision * Recall) / (Precision + Recall)
+
+Ele é útil quando:
+
+existe desequilíbrio entre classes;
+é necessário equilíbrio entre precisão e cobertura.
+
+Quando Usar Precision
+
+Precision é mais importante quando falsos positivos possuem alto custo.
+
+Exemplos:
+
+filtro de spam;
+recomendação de conteúdo;
+sistemas jurídicos;
+detecção de fraude com bloqueio automático.
+
+Exemplo:
+Bloquear usuários legítimos pode ser problemático.
+
+Quando Usar Recall
+
+Recall é mais importante quando falsos negativos possuem alto custo.
+
+Exemplos:
+
+diagnóstico médico;
+detecção de câncer;
+sistemas de segurança;
+detecção de fraudes financeiras.
+
+Exemplo:
+Não detectar um paciente doente pode ser grave.
+
+Precision e Recall em Classes Desbalanceadas
+
+Em datasets desbalanceados:
+
+acurácia pode ser enganosa.
+
+Exemplo:
+
+99% dos e-mails não são spam.
+
+Um modelo que sempre responde “não spam” teria:
+
+99% de acurácia;
+mas recall zero para spam.
+
+Por isso:
+
+precision e recall são essenciais.
+
+Curva Precision-Recall
+
+A Curva Precision-Recall mostra a relação entre as duas métricas em diferentes limiares de decisão.
+
+Ela é muito utilizada em:
+
+classificação desbalanceada;
+recuperação de informação;
+sistemas de recomendação.
+
+Aplicações
+
+Precision e recall são usados em:
+
+Inteligência Artificial;
+Processamento de Linguagem Natural;
+Visão Computacional;
+Sistemas médicos;
+Segurança digital;
+Motores de busca.

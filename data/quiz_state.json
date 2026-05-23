@@ -1,0 +1,41 @@
+{
+  "topic": "Algebra Linear",
+  "index": 3,
+  "answers": [
+    0,
+    3,
+    1
+  ],
+  "quiz": [
+    {
+      "pergunta": "Qual das seguintes opções descreve corretamente um vetor em Álgebra Linear?",
+      "opcoes": [
+        "Um arranjo retangular de números.",
+        "Um objeto matemático que possui magnitude e direção.",
+        "Um método para evitar overfitting em modelos de regressão.",
+        "Um hiperparâmetro que controla a intensidade da regularização."
+      ],
+      "resposta_correta": 2
+    },
+    {
+      "pergunta": "Qual condição deve ser satisfeita para que a multiplicação de duas matrizes seja definida?",
+      "opcoes": [
+        "O número de linhas da primeira matriz deve ser igual ao número de colunas da segunda matriz.",
+        "O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz.",
+        "O número de linhas da primeira matriz deve ser diferente do número de colunas da segunda matriz.",
+        "O número de colunas da primeira matriz deve ser igual ao número de linhas da primeira matriz."
+      ],
+      "resposta_correta": 2
+    },
+    {
+      "pergunta": "Na equação Av = λv, referente a autovalores e autovetores, o que representa λ?",
+      "opcoes": [
+        "Um autovetor.",
+        "Uma matriz.",
+        "Um autovalor.",
+        "O vetor original."
+      ],
+      "resposta_correta": 3
+    }
+  ]
+}

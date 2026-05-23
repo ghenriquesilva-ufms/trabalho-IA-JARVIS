@@ -1,0 +1,188 @@
+Origem dos dados: livros acadêmicos de matemática e álgebra linear, incluindo Gilbert Strang, David C. Lay e Steven J. Leon
+Tipo de conteúdo: fundamentos matemáticos, vetores, matrizes, sistemas lineares e transformações lineares
+Limitações: não aborda demonstrações matemáticas avançadas nem aplicações altamente especializadas
+
+A Álgebra Linear é um ramo da matemática responsável pelo estudo de vetores, matrizes, espaços vetoriais e transformações lineares. Ela possui grande importância em áreas como computação, física, engenharia, ciência de dados, inteligência artificial e computação gráfica.
+
+Vetores
+
+Vetores são estruturas matemáticas que possuem:
+
+magnitude;
+direção;
+sentido.
+
+Eles podem representar:
+
+força;
+velocidade;
+deslocamento;
+coordenadas;
+dados multidimensionais.
+
+Exemplo de vetor:
+v = (2, 5)
+
+Esse vetor representa um deslocamento de:
+
+2 unidades no eixo x;
+5 unidades no eixo y.
+
+Operações comuns com vetores:
+
+soma;
+subtração;
+multiplicação por escalar;
+produto escalar;
+produto vetorial.
+
+Vetores são fundamentais em:
+
+gráficos 3D;
+física;
+redes neurais;
+machine learning.
+
+Matrizes
+
+Matrizes são tabelas organizadas em:
+
+linhas;
+colunas.
+
+Exemplo:
+
+A =
+[1 2]
+[3 4]
+
+As matrizes são utilizadas para:
+
+representar sistemas lineares;
+armazenar dados;
+realizar transformações geométricas;
+representar imagens digitais;
+cálculos em IA.
+
+Operações principais:
+
+soma de matrizes;
+multiplicação;
+transposição;
+inversa;
+determinante.
+
+A multiplicação de matrizes só é possível quando:
+
+o número de colunas da primeira matriz é igual ao número de linhas da segunda.
+
+Importante:
+
+multiplicação matricial geralmente não é comutativa.
+
+Ou seja:
+AB ≠ BA
+
+Sistemas Lineares
+
+Sistemas lineares são conjuntos de equações resolvidas simultaneamente.
+
+Exemplo:
+
+2x + y = 5
+x - y = 1
+
+A Álgebra Linear utiliza matrizes para resolver sistemas grandes de forma eficiente.
+
+Métodos comuns:
+
+eliminação de Gauss;
+regra de Cramer;
+matriz inversa.
+
+Aplicações:
+
+engenharia;
+economia;
+simulações;
+circuitos elétricos;
+computação científica.
+
+Espaços Vetoriais
+
+Espaços vetoriais são conjuntos de vetores que seguem regras matemáticas específicas.
+
+Exemplos:
+
+plano cartesiano;
+espaço tridimensional;
+conjuntos de funções;
+espaços de polinômios.
+
+Conceitos importantes:
+
+base;
+dimensão;
+independência linear;
+subespaços vetoriais.
+
+Uma base é um conjunto mínimo de vetores capaz de representar todos os vetores de determinado espaço.
+
+Transformações Lineares
+
+Transformações lineares são funções matemáticas que preservam:
+
+soma vetorial;
+multiplicação por escalar.
+
+Elas são utilizadas para:
+
+rotações;
+escalas;
+projeções;
+reflexões.
+
+Na computação gráfica, por exemplo:
+
+objetos 3D são transformados usando matrizes.
+
+As transformações lineares podem ser representadas matematicamente por matrizes.
+
+Autovalores e Autovetores
+
+Autovalores e autovetores são conceitos fundamentais da Álgebra Linear avançada.
+
+Um autovetor mantém sua direção após uma transformação linear.
+
+O autovalor representa:
+
+o fator de escala aplicado nesse vetor.
+
+Aplicações:
+
+inteligência artificial;
+compressão de imagens;
+PCA (Principal Component Analysis);
+sistemas dinâmicos;
+mecânica quântica;
+recomendação de conteúdo.
+
+Aplicações da Álgebra Linear
+
+A Álgebra Linear é utilizada em:
+
+Machine Learning;
+Redes Neurais;
+Computação Gráfica;
+Visão Computacional;
+Física;
+Engenharia;
+Estatística;
+Ciência de Dados;
+Processamento de Imagens.
+
+Em Inteligência Artificial:
+
+embeddings são vetores;
+redes neurais utilizam matrizes;
+modelos trabalham com operações vetoriais constantemente.

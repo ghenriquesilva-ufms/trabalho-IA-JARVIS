@@ -1,0 +1,240 @@
+Origem dos dados: estatística aplicada e aprendizado supervisionado, incluindo Hastie, Tibshirani e Bishop
+Tipo de conteúdo: classificação probabilística binária e multinomial
+Limitações: não aborda otimização matemática avançada nem teoria convexa aprofundada
+
+Regressao Logistica - Resumo
+
+A regressão logística é um algoritmo de Aprendizado de Máquina utilizado para problemas de classificação. Apesar do nome “regressão”, seu objetivo principal não é prever valores contínuos, mas sim calcular probabilidades de pertencimento a classes.
+
+Ela é amplamente utilizada em classificação binária, onde existem apenas duas categorias possíveis.
+
+Exemplos:
+
+spam ou não spam;
+fraude ou não fraude;
+aprovado ou reprovado;
+doente ou saudável.
+
+Conceito Fundamental
+
+A regressão logística utiliza uma combinação linear das variáveis de entrada e aplica uma função sigmoide para transformar o resultado em uma probabilidade entre 0 e 1.
+
+Fluxo simplificado:
+
+O modelo calcula uma soma ponderada das entradas;
+O resultado passa pela função sigmoide;
+A saída representa uma probabilidade.
+
+Se a probabilidade ultrapassar determinado limiar:
+
+o modelo classifica como positivo;
+caso contrário, negativo.
+
+Modelo Linear
+
+O primeiro passo da regressão logística é calcular:
+
+z = w1x1 + w2x2 + w3x3 + ... + b
+
+Onde:
+
+x representa as variáveis de entrada;
+w representa os pesos;
+b representa o bias (intercepto);
+z é a combinação linear.
+
+Os pesos indicam o impacto de cada variável na previsão.
+
+Função Sigmoide
+
+Após calcular z, o modelo aplica a função sigmoide:
+
+σ(z) = 1 / (1 + e^(-z))
+
+Essa função:
+
+transforma qualquer valor em uma saída entre 0 e 1;
+permite interpretar o resultado como probabilidade.
+
+Exemplo:
+
+saída = 0,92 → 92% de chance da classe positiva;
+saída = 0,10 → 10% de chance.
+
+Classificação
+
+Normalmente utiliza-se um limiar de decisão:
+
+acima de 0,5 → classe positiva;
+abaixo de 0,5 → classe negativa.
+
+Entretanto:
+
+o limiar pode ser ajustado conforme o problema.
+
+Exemplo:
+Em diagnóstico médico:
+
+pode-se reduzir o limiar para aumentar recall.
+
+Treinamento do Modelo
+
+O treinamento da regressão logística consiste em encontrar os pesos ideais que minimizam o erro do modelo.
+
+Isso é feito utilizando:
+
+otimização matemática;
+gradiente descendente;
+funções de custo.
+
+Função de Perda
+
+A regressão logística normalmente utiliza:
+
+Binary Cross Entropy;
+Log Loss.
+
+Essa função penaliza previsões incorretas e ajuda o modelo a aprender probabilidades adequadas.
+
+Interpretação Probabilística
+
+Uma das maiores vantagens da regressão logística é sua interpretação estatística.
+
+O modelo estima:
+
+probabilidade de ocorrência de uma classe.
+
+Isso é importante em:
+
+medicina;
+finanças;
+análise de risco;
+sistemas de decisão.
+
+Tipos de Regressão Logística
+
+Regressão Logística Binária
+
+Utilizada quando existem apenas duas classes.
+
+Exemplo:
+
+verdadeiro ou falso.
+
+Regressão Logística Multinomial
+
+Utilizada para múltiplas categorias.
+
+Exemplo:
+
+classificação de espécies;
+identificação de idiomas.
+
+Regressão Logística Ordinal
+
+Utilizada quando as categorias possuem ordem.
+
+Exemplo:
+
+ruim;
+médio;
+bom;
+excelente.
+
+Métricas de Avaliação
+
+Como é um algoritmo de classificação, utiliza métricas como:
+
+acurácia;
+precisão;
+recall;
+F1-score;
+ROC-AUC.
+
+A matriz de confusão também é amplamente utilizada.
+
+Vantagens
+
+Principais vantagens:
+
+simples de implementar;
+rápida execução;
+baixo custo computacional;
+fácil interpretação;
+produz probabilidades;
+eficiente em problemas lineares.
+
+Além disso:
+
+funciona bem com datasets menores.
+
+Limitações
+
+Apesar de muito útil, possui limitações:
+
+dificuldade com relações não lineares;
+menor desempenho em problemas complexos;
+sensível a multicolinearidade;
+pode sofrer underfitting.
+
+Em problemas muito complexos:
+
+redes neurais e árvores podem performar melhor.
+
+Regularização
+
+Para evitar overfitting, a regressão logística frequentemente utiliza regularização.
+
+Tipos comuns:
+
+L1 (Lasso);
+L2 (Ridge).
+
+A regularização reduz:
+
+complexidade do modelo;
+dependência excessiva dos dados de treino.
+
+Aplicações
+
+A regressão logística é amplamente utilizada em:
+
+detecção de spam;
+análise de crédito;
+diagnóstico médico;
+previsão de churn;
+detecção de fraude;
+marketing;
+sistemas de recomendação.
+
+Exemplo em Medicina
+
+Entrada:
+
+idade;
+pressão arterial;
+colesterol;
+sintomas.
+
+Saída:
+
+probabilidade de doença.
+
+O modelo pode prever:
+
+87% de chance de determinada condição médica.
+
+Relação com Redes Neurais
+
+A regressão logística pode ser vista como:
+
+uma forma simples de neurônio artificial.
+
+Ela utiliza:
+
+soma ponderada;
+função de ativação sigmoide.
+
+Por isso:
+
+é considerada uma base importante para compreensão de redes neurais.

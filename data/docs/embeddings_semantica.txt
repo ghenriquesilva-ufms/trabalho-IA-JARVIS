@@ -1,0 +1,243 @@
+Origem dos dados: artigos de Information Retrieval, NLP e sistemas RAG, incluindo FAISS (Meta), Sentence Transformers e literatura de busca vetorial
+Tipo de conteúdo: busca vetorial, similaridade semântica e RAG 
+Limitações: não cobre arquiteturas distribuídas nem otimizações de larga escala
+
+Embeddings e busca semântica são tecnologias fundamentais em sistemas modernos de Inteligência Artificial, especialmente em aplicações de Processamento de Linguagem Natural (PLN), sistemas RAG (Retrieval-Augmented Generation), motores de busca inteligentes e assistentes virtuais.
+
+Enquanto os embeddings representam informações como vetores numéricos, a busca semântica utiliza esses vetores para encontrar conteúdos relacionados pelo significado, e não apenas por palavras exatas.
+
+Embeddings
+
+Embeddings são representações matemáticas de textos, imagens ou outros dados em forma de vetores numéricos.
+
+O objetivo principal é transformar significado em números para que algoritmos consigam comparar informações semanticamente.
+
+Exemplo simplificado:
+
+“carro”;
+“automóvel”;
+“veículo”.
+
+Esses termos terão embeddings próximos porque possuem significados semelhantes.
+
+Já palavras semanticamente diferentes:
+
+“avião”;
+“banana”;
+
+tendem a possuir vetores mais distantes.
+
+Representação Vetorial
+
+Um embedding normalmente é representado como uma lista de números:
+
+[0.21, -0.48, 0.77, 0.03, ...]
+
+Cada valor representa uma dimensão do espaço vetorial.
+
+Modelos modernos podem gerar embeddings com:
+
+128 dimensões;
+384 dimensões;
+768 dimensões;
+1536 dimensões;
+ou mais.
+
+Quanto maior a dimensionalidade:
+
+Maior capacidade semântica;
+Maior custo computacional.
+
+Como Embeddings São Criados
+
+Embeddings são gerados por modelos treinados em grandes volumes de dados.
+
+Esses modelos aprendem padrões linguísticos observando:
+
+palavras próximas;
+contexto;
+frequência;
+relações semânticas.
+
+Modelos populares:
+
+Word2Vec;
+GloVe;
+FastText;
+BERT;
+Sentence Transformers;
+modelos de embedding da OpenAI.
+
+Modelos modernos geram embeddings contextualizados, ou seja:
+
+a mesma palavra pode possuir diferentes representações dependendo do contexto.
+
+Exemplo:
+
+“banco” financeiro;
+“banco” de sentar.
+
+Busca Semântica
+
+Busca semântica é uma técnica de recuperação de informação baseada em significado.
+
+Diferente da busca tradicional por palavras-chave, a busca semântica entende contexto e intenção.
+
+Busca Tradicional
+
+Uma busca tradicional funciona por correspondência direta de termos.
+
+Exemplo:
+Consulta:
+
+“carro rápido”
+
+Resultados encontrados:
+
+páginas contendo exatamente “carro” e “rápido”.
+
+Problemas:
+
+não entende sinônimos;
+não entende contexto;
+falha com linguagem natural.
+
+Busca Semântica
+
+Na busca semântica:
+
+Os documentos são convertidos em embeddings;
+A consulta do usuário também é convertida em embedding;
+O sistema compara os vetores;
+Os vetores mais próximos são retornados.
+
+Isso permite encontrar conteúdos relacionados semanticamente mesmo sem palavras idênticas.
+
+Exemplo:
+Consulta:
+
+“automóvel veloz”
+
+Pode retornar:
+
+“carro esportivo”;
+“veículo de alta performance”.
+
+Mesmo sem correspondência literal.
+
+Similaridade Vetorial
+
+A comparação entre embeddings normalmente utiliza:
+
+Similaridade de Cosseno;
+Distância Euclidiana;
+Produto Escalar.
+
+A Similaridade de Cosseno é a mais utilizada em busca semântica.
+
+Ela mede o quão alinhados dois vetores estão no espaço vetorial.
+
+Quanto maior o valor:
+
+maior a similaridade semântica.
+
+Fluxo de um Sistema de Busca Semântica
+
+Etapas comuns:
+
+Coleta de documentos;
+Divisão dos textos em chunks;
+Geração dos embeddings;
+Armazenamento em banco vetorial;
+Conversão da consulta em embedding;
+Busca por similaridade;
+Retorno dos documentos mais relevantes.
+
+Chunking
+
+Chunking é a divisão de documentos grandes em partes menores.
+
+Isso melhora:
+
+precisão da busca;
+recuperação contextual;
+desempenho do sistema.
+
+Chunks muito grandes:
+
+aumentam ruído semântico.
+
+Chunks muito pequenos:
+
+podem perder contexto.
+
+Bancos Vetoriais
+
+Bancos vetoriais armazenam embeddings e permitem busca eficiente por similaridade.
+
+Exemplos:
+
+FAISS;
+Pinecone;
+Weaviate;
+Milvus;
+ChromaDB;
+Qdrant.
+
+Esses sistemas utilizam algoritmos otimizados para pesquisa vetorial em larga escala.
+
+RAG e Busca Semântica
+
+Sistemas RAG utilizam busca semântica para recuperar informações relevantes antes da geração da resposta.
+
+Fluxo simplificado:
+
+Usuário faz pergunta;
+Pergunta vira embedding;
+Sistema encontra chunks relevantes;
+Os textos recuperados são enviados ao modelo de linguagem;
+O modelo gera resposta baseada no contexto encontrado.
+
+Isso reduz:
+
+alucinações;
+respostas incorretas;
+falta de contexto.
+
+Aplicações
+
+Busca semântica é utilizada em:
+
+Chatbots;
+Assistentes virtuais;
+Motores de busca inteligentes;
+Sistemas jurídicos;
+Plataformas educacionais;
+Sistemas corporativos;
+E-commerce;
+Recomendação de conteúdo.
+
+Exemplo em E-commerce
+
+Busca tradicional:
+
+“tênis corrida azul”.
+
+Busca semântica pode entender:
+
+“calçado esportivo azul para correr”.
+
+Mesmo sem palavras iguais.
+
+Desafios
+
+Apesar das vantagens, existem limitações:
+
+alto custo computacional;
+necessidade de GPUs em larga escala;
+uso elevado de memória;
+necessidade de atualização dos embeddings;
+possíveis vieses do modelo;
+dificuldade de interpretar vetores matematicamente.
+
+Outro desafio importante é a qualidade do chunking e dos dados utilizados.

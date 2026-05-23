@@ -1,0 +1,39 @@
+TESTES NO LABORATORIO (JARVIS)
+
+1) Instalar dependencias
+- py -m pip install openai sentence-transformers pdfplumber PyPDF2 numpy
+
+2) Gerar indice RAG (obrigatorio antes de buscar)
+- py -c "from rag.loader import load_documents; from rag.chunker import chunk_documents; from rag.embedder import generate_embeddings, save_index; docs=load_documents('data/docs'); chunks=chunk_documents(docs); embeddings=generate_embeddings(chunks); save_index(embeddings, 'data/index.pkl'); print(f'Docs: {len(docs)} | Chunks: {len(chunks)} | Index salvo.')"
+
+3) Rodar testes basicos
+- py scripts/basic_tests.py
+
+4) Rodar no terminal (CLI)
+- py main.py
+Comandos:
+- !hoje
+- !tarefas
+- !quiz algebra
+- !revisao algebra
+- !plano prova de calculo
+- Pergunta livre: Explique regressao logistica
+
+5) Rodar interface grafica (UI)
+- py ui/app.py
+Na UI:
+- Botao Gerar embeddings
+- Botao Buscar RAG
+- Botao Quiz
+- Botao Revisao
+- Tarefas (adicionar, editar, concluir)
+
+6) Verificar avaliacao
+- py scripts/run_evaluation.py
+- Abrir data/evaluation_results.csv para classificar
+
+7) Verificar analise de erros
+- Abrir data/error_analysis_template.csv
+
+OBSERVACAO SOBRE TOOL CALLING
+O servidor Gemma pode nao estar habilitado para tool calling. O teste abaixo evidencia o erro (400).

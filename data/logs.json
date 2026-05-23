@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2026-05-23T10:18:17",
+    "tool_name": "consultar_agenda",
+    "input": {
+      "data": "hoje"
+    },
+    "output": "Nenhum evento encontrado."
+  },
+  {
+    "timestamp": "2026-05-23T11:42:17",
+    "tool_name": "consultar_agenda",
+    "input": {
+      "data": "hoje"
+    },
+    "output": "Nenhum evento encontrado."
+  },
+  {
+    "timestamp": "2026-05-23T11:45:52",
+    "tool_name": "listar_tarefas",
+    "input": {
+      "status": "pendente"
+    },
+    "output": "#3 | Teste de tarefa | Teste | prazo: 2026-12-01"
+  },
+  {
+    "timestamp": "2026-05-23T11:46:06",
+    "tool_name": "adicionar_tarefa",
+    "input": {
+      "titulo": "Estudar embeddings",
+      "prazo": "2026-05-30"
+    },
+    "output": "Tarefa criada: #4 - Estudar embeddings"
+  },
+  {
+    "timestamp": "2026-05-23T11:46:29",
+    "tool_name": "buscar_material_rag",
+    "input": {
+      "pergunta": "o que e regularizacao L2?"
+    },
+    "output": "[1] regularizacao_l2.txt (score=0.703)\ns podem indicar:\n\nmemorização dos dados;\nsensibilidade exagerada;\nbaixa generalização.\n\nA regularização L2 adiciona uma penalidade matemática para desencorajar pesos grandes.\n\nObjetivo da Regularização\n\nA regularização busca:\n\nreduzir overfitting;\nmelhorar generalização;\nestabilizar o modelo;\nreduzir sensibilidade ao ruído.\n\nO modelo passa a aprender padrões mais gerais em vez de memorizar dados específicos.\n\nFunção de Custo com Regularização L2\n\nSem regularização:\n\no modelo minimiza apenas o er\n\n[2] regularizacao_l2.txt (score=0.679)\nça entre L1 e L2\n\nRegularização L1:\n\nutiliza soma dos valores absolutos;\npode zerar pesos;\ngera modelos mais esparsos.\n\nRegularização L2:\n\nutiliza soma dos quadrados;\nreduz pesos suavemente;\nmantém todas as variáveis.\n\nL2 tende a produzir modelos:\n\nmais estáveis;\nmenos agressivos.\n\nRegularização em Regressão\n\nA regularização L2 é muito utilizada em:\n\nregressão linear;\nregressão logística.\n\nNa regressão linear:\n\nrecebe o nome Ridge Regression.\n\nEla ajuda quando existem:\n\nmuitos atributos;\nmultico\n\n[3] regularizacao_l2.txt (score=0.677)\nregularização.\n\nLambda pequeno:\n\npouca regularização;\nmaior risco de overfitting.\n\nLambda grande:\n\nforte penalização;\nmodelo mais simples;\nrisco de underfitting.\n\nEscolher lambda corretamente é essencial.\n\nEfeito nos Pesos\n\nA regularização L2:\n\nreduz pesos grandes;\ndistribui importância entre atributos;\nevita dependência excessiva de variáveis específicas.\n\nImportante:\n\nos pesos raramente se tornam exatamente zero;\napenas ficam menores.\n\nDiferença entre L1 e L2\n\nRegularização L1:\n\nutiliza soma"
+  },
+  {
+    "timestamp": "2026-05-23T19:02:19",
+    "tool_name": "consultar_agenda",
+    "input": {
+      "data": "hoje"
+    },
+    "output": "Nenhum evento encontrado."
+  }
+]

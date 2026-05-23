@@ -1,0 +1,18 @@
+PROMPT PARA COPILOT (TESTE TOOL CALLING)
+
+Copie e cole no Copilot do laboratorio:
+
+"""
+Crie um teste rapido em Python para chamar a API do Gemma com tool calling. Use:
+- base_url: https://llm.liaufms.org/v1/gemma-3-12b-it
+- api_key: Cxt2ftLF7d3mHS2JdiFqB-eSDAQeZvFATPXPs02lV9A
+- model: google/gemma-3-12b-it
+- tools: funcao chamada ping (sem parametros)
+- tool_choice: auto
+
+Execute o script e mostre a saida/erro. O objetivo e demonstrar o erro do servidor: 'auto tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set'.
+"""
+
+Se preferir, rode direto no terminal:
+
+py -c "from openai import OpenAI; client=OpenAI(base_url='https://llm.liaufms.org/v1/gemma-3-12b-it', api_key='Cxt2ftLF7d3mHS2JdiFqB-eSDAQeZvFATPXPs02lV9A'); tools=[{'type':'function','function':{'name':'ping','description':'Responde com pong','parameters':{'type':'object','properties':{}}}}]; resp=client.chat.completions.create(model='google/gemma-3-12b-it', messages=[{'role':'user','content':'Chame a ferramenta ping.'}], tools=tools, tool_choice='auto'); print(resp.choices[0].message)"

@@ -1,0 +1,211 @@
+Origem dos dados: pesquisas em Processamento de Linguagem Natural, incluindo Word2Vec (Google), BERT (Google Research) e artigos de representação vetorial
+Tipo de conteúdo: representação vetorial semântica de dados 
+Limitações: não aborda treinamento interno detalhado de modelos de embedding
+
+Embeddings são representações vetoriais de dados utilizados em Inteligência Artificial, Processamento de Linguagem Natural (PLN) e sistemas de busca semântica. Eles transformam informações como palavras, frases, imagens ou documentos em vetores numéricos capazes de preservar significado e relações semânticas.
+
+O principal objetivo dos embeddings é permitir que computadores compreendam similaridades entre diferentes informações de maneira matemática.
+
+Conceito Fundamental
+
+Em um embedding, cada elemento é representado como um vetor em um espaço multidimensional. Elementos semanticamente semelhantes tendem a ficar próximos nesse espaço vetorial.
+
+Por exemplo:
+
+“gato” e “felino” possuem embeddings próximos;
+“carro” e “automóvel” também;
+“gato” e “avião” ficam distantes.
+
+Isso permite que algoritmos comparem significados usando distância matemática entre vetores.
+
+Representação Vetorial
+
+Um embedding pode ser representado como:
+
+[0.12, -0.44, 0.91, 0.03, ...]
+
+Cada número representa uma dimensão do espaço vetorial. Modelos modernos podem utilizar centenas ou milhares de dimensões.
+
+A quantidade de dimensões influencia:
+
+Capacidade de representação;
+Precisão semântica;
+Consumo computacional;
+Uso de memória.
+
+Similaridade Semântica
+
+A comparação entre embeddings normalmente é feita usando métricas matemáticas, como:
+
+Distância Euclidiana;
+Similaridade de Cosseno;
+Produto Escalar.
+
+A Similaridade de Cosseno é uma das mais utilizadas, pois mede o quão alinhados dois vetores estão.
+
+Quanto maior a similaridade:
+
+Mais relacionados semanticamente os conteúdos são.
+
+Tipos de Embeddings
+
+Word Embeddings
+
+Representam palavras individuais.
+
+Exemplos:
+
+Word2Vec;
+GloVe;
+FastText.
+
+Esses modelos aprendem relações linguísticas analisando grandes volumes de texto.
+
+Sentence Embeddings
+
+Representam frases inteiras.
+
+São utilizados para:
+
+Busca semântica;
+Chatbots;
+Classificação de texto;
+Sistemas RAG.
+
+Document Embeddings
+
+Representam documentos completos.
+
+Permitem:
+
+Recuperação de informação;
+Clusterização;
+Recomendação de conteúdo;
+Busca inteligente.
+
+Image Embeddings
+
+Transformam imagens em vetores numéricos.
+
+Utilizados em:
+
+Reconhecimento facial;
+Busca por similaridade visual;
+Classificação de imagens.
+
+Como Embeddings São Gerados
+
+Embeddings normalmente são produzidos por redes neurais treinadas em grandes conjuntos de dados.
+
+Durante o treinamento, o modelo aprende padrões de contexto e relações entre elementos.
+
+Exemplo:
+A palavra “rei” frequentemente aparece próxima de:
+
+“rainha”;
+“trono”;
+“monarquia”.
+
+O modelo aprende essas relações automaticamente e posiciona os vetores de forma coerente no espaço vetorial.
+
+Embeddings em Modelos Modernos
+
+Modelos Transformer, como:
+
+BERT;
+GPT;
+Sentence Transformers;
+
+geram embeddings contextualizados.
+
+Isso significa que:
+
+A mesma palavra pode possuir embeddings diferentes dependendo do contexto.
+
+Exemplo:
+
+“banco” como instituição financeira;
+“banco” como assento.
+
+Aplicações de Embeddings
+
+Busca Semântica
+
+Permitem encontrar conteúdos relacionados pelo significado, não apenas por palavras idênticas.
+
+Exemplo:
+Uma busca por:
+
+“carro rápido”
+
+pode retornar:
+
+“automóvel esportivo”.
+
+Sistemas RAG
+
+RAG (Retrieval-Augmented Generation) utiliza embeddings para recuperar informações relevantes antes da geração de respostas.
+
+Fluxo básico:
+
+Documentos são convertidos em embeddings;
+O texto da pergunta também vira embedding;
+O sistema encontra vetores semanticamente próximos;
+Os documentos recuperados são enviados ao modelo de linguagem.
+
+Chatbots e IA Conversacional
+
+Embeddings ajudam:
+
+Compreensão contextual;
+Memória semântica;
+Recuperação de conhecimento.
+
+Recomendação de Conteúdo
+
+Utilizados em:
+
+Netflix;
+Spotify;
+YouTube;
+E-commerce.
+
+O sistema encontra itens semanticamente similares ao comportamento do usuário.
+
+Clusterização
+
+Embeddings permitem agrupar conteúdos semelhantes automaticamente.
+
+Exemplos:
+
+Notícias por assunto;
+Produtos semelhantes;
+Agrupamento de clientes.
+
+Bancos Vetoriais
+
+Como embeddings são vetores numéricos, sistemas especializados chamados bancos vetoriais são utilizados para armazená-los e pesquisá-los eficientemente.
+
+Exemplos:
+
+Pinecone;
+Weaviate;
+Milvus;
+ChromaDB;
+FAISS.
+
+Esses sistemas são otimizados para busca por similaridade vetorial em larga escala.
+
+Desafios dos Embeddings
+
+Apesar de muito poderosos, embeddings possuem limitações:
+
+Alto custo computacional;
+Grande uso de memória;
+Possibilidade de vieses nos dados;
+Perda parcial de contexto;
+Dificuldade de interpretação humana.
+
+Além disso, embeddings dependem diretamente da qualidade dos dados de treinamento.
+
+Conclusão

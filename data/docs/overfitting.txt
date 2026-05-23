@@ -1,0 +1,226 @@
+Origem dos dados: teoria de aprendizado estatístico e Machine Learning, incluindo Trevor Hastie, Andrew Ng e Bishop
+Tipo de conteúdo: generalização de modelos e problemas de treinamento
+Limitações: não aprofunda teoria matemática avançada de bias-variance
+
+Overfitting - Resumo
+
+Overfitting é um problema comum em Aprendizado de Máquina que ocorre quando um modelo aprende excessivamente os dados de treinamento, incluindo ruídos e padrões irrelevantes, perdendo a capacidade de generalizar para novos dados.
+
+Um modelo com overfitting apresenta excelente desempenho durante o treinamento, mas desempenho ruim quando recebe dados que nunca viu anteriormente.
+
+Conceito Fundamental
+
+O objetivo de um modelo de Machine Learning é aprender padrões gerais dos dados, não memorizar exemplos específicos.
+
+Quando ocorre overfitting:
+
+o modelo se torna excessivamente especializado;
+aprende detalhes irrelevantes;
+perde capacidade de generalização.
+
+Isso significa que:
+
+o modelo “decorou” os dados de treino.
+
+Exemplo Simples
+
+Imagine um sistema para identificar cães e gatos.
+
+Durante o treinamento:
+
+todas as imagens de gatos possuem fundo azul.
+
+O modelo pode aprender incorretamente:
+
+“fundo azul = gato”.
+
+Quando recebe novas imagens:
+
+pode errar completamente.
+
+Nesse caso:
+
+o modelo aprendeu ruído;
+não aprendeu o conceito real.
+
+Características do Overfitting
+
+Sinais comuns:
+
+erro muito baixo no treino;
+erro alto em validação/teste;
+desempenho inconsistente em dados reais;
+modelo excessivamente complexo.
+
+Em gráficos de treinamento:
+
+a perda de treino continua diminuindo;
+a perda de validação começa a aumentar.
+
+Causas do Overfitting
+
+Quantidade insuficiente de dados
+
+Poucos exemplos dificultam aprendizado generalizado.
+
+Modelo excessivamente complexo
+
+Modelos muito grandes podem memorizar dados facilmente.
+
+Exemplos:
+
+árvores profundas;
+redes neurais enormes;
+excesso de parâmetros.
+
+Ruído nos dados
+
+Dados inconsistentes ou incorretos podem ser aprendidos pelo modelo.
+
+Treinamento excessivo
+
+Treinar por muitas épocas pode fazer o modelo memorizar padrões específicos.
+
+Alta dimensionalidade
+
+Grande quantidade de atributos pode aumentar risco de overfitting.
+
+Diferença entre Overfitting e Underfitting
+
+Overfitting:
+
+modelo aprende demais;
+baixa generalização;
+alta complexidade.
+
+Underfitting:
+
+modelo aprende pouco;
+desempenho ruim até no treino;
+modelo muito simples.
+
+Ideal:
+
+equilíbrio entre aprendizado e generalização.
+
+Bias e Variance
+
+Overfitting está relacionado ao conceito de:
+
+alta variância.
+
+O modelo reage excessivamente a pequenas variações nos dados.
+
+Já underfitting está relacionado a:
+
+alto bias.
+
+O modelo simplifica demais os padrões.
+
+Métodos para Reduzir Overfitting
+
+Regularização
+
+Adiciona penalidades para impedir pesos excessivos.
+
+Tipos comuns:
+
+L1 (Lasso);
+L2 (Ridge).
+
+Dropout
+
+Muito utilizado em redes neurais.
+
+Desativa neurônios aleatoriamente durante treinamento para evitar dependência excessiva.
+
+Early Stopping
+
+Interrompe o treinamento antes que o modelo comece a memorizar os dados.
+
+Data Augmentation
+
+Cria novas variações artificiais dos dados.
+
+Muito utilizado em visão computacional.
+
+Exemplos:
+
+rotação de imagens;
+espelhamento;
+alteração de brilho.
+
+Mais Dados
+
+Quanto maior e mais diverso o dataset:
+
+menor tendência ao overfitting.
+
+Cross Validation
+
+Avalia o modelo em múltiplas divisões do dataset para melhorar generalização.
+
+Simplificação do Modelo
+
+Reduzir:
+
+número de camadas;
+profundidade;
+quantidade de parâmetros.
+
+Isso limita capacidade de memorização.
+
+Overfitting em Redes Neurais
+
+Redes neurais profundas possuem alto risco de overfitting devido à enorme quantidade de parâmetros.
+
+Transformers modernos, LLMs e redes profundas utilizam:
+
+regularização;
+dropout;
+datasets massivos;
+fine-tuning controlado.
+
+Para reduzir o problema.
+
+Overfitting em Árvores de Decisão
+
+Árvores muito profundas podem memorizar dados específicos.
+
+Soluções:
+
+limitar profundidade;
+limitar número de folhas;
+pruning (poda da árvore).
+
+Avaliação do Overfitting
+
+A comparação entre:
+
+treino;
+validação;
+teste;
+
+é essencial.
+
+Cenário típico:
+
+treino: 99% de acurácia;
+teste: 65% de acurácia.
+
+Isso indica forte overfitting.
+
+Aplicações Afetadas
+
+Overfitting pode impactar:
+
+sistemas médicos;
+detecção de fraude;
+carros autônomos;
+recomendação de conteúdo;
+sistemas financeiros;
+reconhecimento facial.
+
+Em aplicações críticas:
+
+generalização é essencial.

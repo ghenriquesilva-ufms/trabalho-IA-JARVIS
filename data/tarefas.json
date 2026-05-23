@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "titulo": "Ler capitulo 2",
+    "prazo": "2026-05-30",
+    "materia": "IA",
+    "status": "concluida",
+    "criada_em": "2026-05-22T00:36:23",
+    "descricao": "Ler o capitulo 2."
+  },
+  {
+    "id": 2,
+    "titulo": "Revisão P1",
+    "prazo": "2026-05-30",
+    "materia": "Estruturas de Dados",
+    "status": "concluida",
+    "criada_em": "2026-05-22T09:18:20"
+  },
+  {
+    "id": 3,
+    "titulo": "Teste de tarefa",
+    "prazo": "2026-12-01",
+    "materia": "Teste",
+    "status": "pendente",
+    "criada_em": "2026-05-22T11:01:43"
+  },
+  {
+    "id": 4,
+    "titulo": "Estudar embeddings",
+    "prazo": "2026-05-30",
+    "materia": null,
+    "status": "pendente",
+    "criada_em": "2026-05-23T11:46:06"
+  }
+]
