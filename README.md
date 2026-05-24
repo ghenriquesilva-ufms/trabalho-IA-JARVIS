@@ -1,7 +1,6 @@
-# trabalho-IA-JARVIS
-Trabalho de Inteligência Artificial na Universidade Federal de Mato Grosso do Sul, onde foi criado um assistente inteligente para fins de uso estudantil.
-=======
 # JARVIS Academico
+
+Trabalho de Inteligencia Artificial na Universidade Federal de Mato Grosso do Sul, onde foi criado um assistente inteligente para fins de uso estudantil.
 
 Assistente academico com RAG, agenda, tarefas, planejamento de estudos e modulos de aprendizado.
 
@@ -118,4 +117,3 @@ O sistema implementa 5 ferramentas e loga chamadas em data/logs.json. O servidor
 ## Observacoes
 
 - Para remover warnings do HF Hub, configure HF_TOKEN (opcional).
->>>>>>> 8f13094 (Initial commit)
