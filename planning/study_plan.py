@@ -38,8 +38,7 @@ def gerar_prioridades_do_dia() -> str:
             "content": (
                 "Com base na agenda de hoje e nas tarefas pendentes, "
                 "liste as 3 prioridades do dia e justifique brevemente cada uma. "
-                "Se nao houver eventos, foque nas tarefas.
-\n\n"
+                "Se nao houver eventos, foque nas tarefas.\n\n"
                 f"Agenda hoje:\n{agenda_hoje}\n\n"
                 f"Tarefas pendentes:\n{tarefas_pendentes}"
             ),
